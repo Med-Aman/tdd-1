@@ -15,10 +15,29 @@ public class VowelCounterTest {
         assertEquals(1,new VowelCounter().countVowels("a"));
     }
 
+
+    @Test
+    public void testCounterSingleConsonant(){
+        assertEquals(0,new VowelCounter().countVowels("b"));
+    }
+
     @Test
     public void testCounterMultipleVowel(){
         assertEquals(4,new VowelCounter().countVowels("aeio"));
     }
+
+    @Test
+    public void testCounterVowelAndConsonant(){
+        assertEquals(3,new VowelCounter().countVowels("ABCDEFGHIJK"));
+    }
+
+
+
+
+
+
+
+
 
 
 }
